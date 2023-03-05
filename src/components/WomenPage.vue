@@ -67,7 +67,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 .flex {
   display: flex;
@@ -159,9 +158,7 @@ button {
 .loader {
   display: flex;
   border: 8px solid var(--white);
-  /* Light grey */
   border-top: 8px solid var(--women-color);
-  /* Blue */
   border-radius: 50%;
   width: 50px;
   height: 50px;

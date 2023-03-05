@@ -10,3 +10,36 @@
     --prodtittle: #3f3f3f;
     --white: #ffffff;
 }
+
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bgwm {
+    padding-top: 60px;
+    background-color: var(--bgw-color);
+    background-image: url(../backgroundPattern.png);
+    height: 60%;
+}
+
+.bgm {
+    padding-top: 60px;
+    background-color: var(--bgm-color);
+    background-image: url(../backgroundPattern.png);
+    height: 60%;
+}
+
+.bgun {
+    padding-top: 60px;
+    background-color: var(--bgun-color);
+    height: 60%;
+}

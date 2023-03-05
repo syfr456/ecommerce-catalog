@@ -1,6 +1,6 @@
 <template>
   <div id="app" v-if="data !== null">
-    <div v-if="data.category === 'men\'s clothing'" class="blue_tealish">
+    <div v-if="data.category === 'men\'s clothing'" class="bgm">
       <MenPage
         :isLoading="isLoading"
         :data="data"
@@ -8,7 +8,7 @@
       />
     </div>
 
-    <div v-if="data.category == 'women\'s clothing'" class="pink_lace">
+    <div v-if="data.category == 'women\'s clothing'" class="bgwm">
       <WomenPage
         :isLoading="isLoading"
         :data="data"
@@ -21,7 +21,7 @@
         data.category !== 'women\'s clothing' &&
         data.category !== 'men\'s clothing'
       "
-      class="grey_light"
+      class="bgun"
     >
       <UnavailablePage :isLoading="isLoading" @nextProduct="addPageIndex" />
     </div>
@@ -72,36 +72,4 @@ export default {
 };
 </script>
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-}
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  height: 100vh;
-}
-
-.pink_lace {
-  padding-top: 60px;
-  background-color: #fde2ff;
-  background-image: url(./assets/backgroundPattern.png);
-  height: 60%;
-}
-.blue_tealish {
-  padding-top: 60px;
-  background-color: #d6e6ff;
-  background-image: url(./assets/backgroundPattern.png);
-  height: 60%;
-}
-.grey_light {
-  padding-top: 60px;
-  background-color: #dcdcdc;
-  height: 60%;
-}
-</style>
+<style></style>

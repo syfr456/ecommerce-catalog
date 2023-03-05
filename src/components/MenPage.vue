@@ -67,7 +67,6 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .flex {
   display: flex;
@@ -83,6 +82,7 @@ export default {
   color: var(--prodtittle);
   text-align: left;
 }
+
 .product-description {
   height: 170px;
 }
@@ -158,9 +158,7 @@ button {
 .loader {
   display: flex;
   border: 8px solid var(--white);
-  /* Light grey */
   border-top: 8px solid var(--men-color);
-  /* Blue */
   border-radius: 50%;
   width: 50px;
   height: 50px;
